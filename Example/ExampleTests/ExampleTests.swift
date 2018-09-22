@@ -11,7 +11,29 @@ import XCTest
 
 class ExampleTests: XCTestCase {
     
-    func testZorome() {
+    func testKiriban() {
+        let numbers: [Int: Bool] = [
+            0: false,
+            1: false,
+            10: true,
+            11: false,
+            100: true,
+            111: false,
+            123: false,
+            200: true,
+            222: false,
+            -100: true,
+            -111: false,
+            -123: false
+        ]
+        
+        numbers.forEach {
+            let (number, expected) = $0
+            XCTAssertEqual(number.isKiriban, expected)
+        }
+    }
+    
+    func testZoroban() {
         let numbers: [Int: Bool] = [
             0: false,
             1: false,
@@ -29,7 +51,28 @@ class ExampleTests: XCTestCase {
         
         numbers.forEach {
             let (number, expected) = $0
-            XCTAssertEqual(number.isZorome, expected)
+            XCTAssertEqual(number.isZoroban, expected)
+        }
+    }
+    
+    func testRenban() {
+        let numbers: [Int: Bool] = [
+            1: false,
+            10: false,
+            11: false,
+            100: false,
+            111: false,
+            123: true,
+            234: false,
+            -100: false,
+            -111: false,
+            -123: true
+        ]
+        
+        numbers.forEach {
+            let (number, expected) = $0
+            dump($0)
+            XCTAssertEqual(number.isRenban, expected)
         }
     }
     
@@ -39,4 +82,5 @@ class ExampleTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
 }
