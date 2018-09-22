@@ -10,25 +10,33 @@ import XCTest
 @testable import Example
 
 class ExampleTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func testZorome() {
+        let numbers: [Int: Bool] = [
+            0: false,
+            1: false,
+            10: false,
+            11: true,
+            100: false,
+            111: true,
+            123: false,
+            200: false,
+            222: true,
+            -100: false,
+            -111: true,
+            -123: false
+        ]
+        
+        numbers.forEach {
+            let (number, expected) = $0
+            XCTAssertEqual(number.isZorome, expected)
+        }
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

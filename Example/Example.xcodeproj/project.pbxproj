@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		194769EA21564D6200CF9F1F /* Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194769E021564D6200CF9F1F /* Example.framework */; };
 		194769EF21564D6200CF9F1F /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194769EE21564D6200CF9F1F /* ExampleTests.swift */; };
-		194769F121564D6200CF9F1F /* Example.h in Headers */ = {isa = PBXBuildFile; fileRef = 194769E321564D6200CF9F1F /* Example.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		194769F121564D6200CF9F1F /* Kiriban.h in Headers */ = {isa = PBXBuildFile; fileRef = 194769E321564D6200CF9F1F /* Kiriban.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		194769FC21564F5B00CF9F1F /* Kiriban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194769FB21564F5B00CF9F1F /* Kiriban.swift */; };
+		194769FE21567D7500CF9F1F /* Kiriban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194769FB21564F5B00CF9F1F /* Kiriban.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		194769E021564D6200CF9F1F /* Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		194769E321564D6200CF9F1F /* Example.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Example.h; sourceTree = "<group>"; };
+		194769E321564D6200CF9F1F /* Kiriban.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiriban.h; sourceTree = "<group>"; };
 		194769E421564D6200CF9F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		194769E921564D6200CF9F1F /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		194769EE21564D6200CF9F1F /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
@@ -73,7 +74,7 @@
 		194769E221564D6200CF9F1F /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				194769E321564D6200CF9F1F /* Example.h */,
+				194769E321564D6200CF9F1F /* Kiriban.h */,
 				194769E421564D6200CF9F1F /* Info.plist */,
 				194769FA21564EB600CF9F1F /* Kiriban */,
 			);
@@ -104,7 +105,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				194769F121564D6200CF9F1F /* Example.h in Headers */,
+				194769F121564D6200CF9F1F /* Kiriban.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194769FE21567D7500CF9F1F /* Kiriban.swift in Sources */,
 				194769EF21564D6200CF9F1F /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
