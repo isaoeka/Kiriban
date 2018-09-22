@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		194769EA21564D6200CF9F1F /* Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194769E021564D6200CF9F1F /* Example.framework */; };
+		194769EA21564D6200CF9F1F /* Kiriban.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194769E021564D6200CF9F1F /* Kiriban.framework */; };
 		194769EF21564D6200CF9F1F /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194769EE21564D6200CF9F1F /* ExampleTests.swift */; };
 		194769F121564D6200CF9F1F /* Kiriban.h in Headers */ = {isa = PBXBuildFile; fileRef = 194769E321564D6200CF9F1F /* Kiriban.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		194769FC21564F5B00CF9F1F /* Kiriban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194769FB21564F5B00CF9F1F /* Kiriban.swift */; };
@@ -25,10 +25,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		194769E021564D6200CF9F1F /* Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		194769E021564D6200CF9F1F /* Kiriban.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kiriban.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		194769E321564D6200CF9F1F /* Kiriban.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kiriban.h; sourceTree = "<group>"; };
 		194769E421564D6200CF9F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		194769E921564D6200CF9F1F /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		194769E921564D6200CF9F1F /* KiribanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiribanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		194769EE21564D6200CF9F1F /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		194769F021564D6200CF9F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		194769FB21564F5B00CF9F1F /* Kiriban.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Kiriban.swift; path = ../../../Kiriban/Kiriban.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				194769EA21564D6200CF9F1F /* Example.framework in Frameworks */,
+				194769EA21564D6200CF9F1F /* Kiriban.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +65,8 @@
 		194769E121564D6200CF9F1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				194769E021564D6200CF9F1F /* Example.framework */,
-				194769E921564D6200CF9F1F /* ExampleTests.xctest */,
+				194769E021564D6200CF9F1F /* Kiriban.framework */,
+				194769E921564D6200CF9F1F /* KiribanTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,9 +112,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		194769DF21564D6200CF9F1F /* Example */ = {
+		194769DF21564D6200CF9F1F /* Kiriban */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 194769F421564D6200CF9F1F /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = 194769F421564D6200CF9F1F /* Build configuration list for PBXNativeTarget "Kiriban" */;
 			buildPhases = (
 				194769DB21564D6200CF9F1F /* Headers */,
 				194769DC21564D6200CF9F1F /* Sources */,
@@ -125,14 +125,14 @@
 			);
 			dependencies = (
 			);
-			name = Example;
+			name = Kiriban;
 			productName = Example;
-			productReference = 194769E021564D6200CF9F1F /* Example.framework */;
+			productReference = 194769E021564D6200CF9F1F /* Kiriban.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		194769E821564D6200CF9F1F /* ExampleTests */ = {
+		194769E821564D6200CF9F1F /* KiribanTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 194769F721564D6200CF9F1F /* Build configuration list for PBXNativeTarget "ExampleTests" */;
+			buildConfigurationList = 194769F721564D6200CF9F1F /* Build configuration list for PBXNativeTarget "KiribanTests" */;
 			buildPhases = (
 				194769E521564D6200CF9F1F /* Sources */,
 				194769E621564D6200CF9F1F /* Frameworks */,
@@ -143,9 +143,9 @@
 			dependencies = (
 				194769EC21564D6200CF9F1F /* PBXTargetDependency */,
 			);
-			name = ExampleTests;
+			name = KiribanTests;
 			productName = ExampleTests;
-			productReference = 194769E921564D6200CF9F1F /* ExampleTests.xctest */;
+			productReference = 194769E921564D6200CF9F1F /* KiribanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -179,8 +179,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				194769DF21564D6200CF9F1F /* Example */,
-				194769E821564D6200CF9F1F /* ExampleTests */,
+				194769DF21564D6200CF9F1F /* Kiriban */,
+				194769E821564D6200CF9F1F /* KiribanTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,7 +225,7 @@
 /* Begin PBXTargetDependency section */
 		194769EC21564D6200CF9F1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 194769DF21564D6200CF9F1F /* Example */;
+			target = 194769DF21564D6200CF9F1F /* Kiriban */;
 			targetProxy = 194769EB21564D6200CF9F1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -452,7 +452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		194769F421564D6200CF9F1F /* Build configuration list for PBXNativeTarget "Example" */ = {
+		194769F421564D6200CF9F1F /* Build configuration list for PBXNativeTarget "Kiriban" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				194769F521564D6200CF9F1F /* Debug */,
@@ -461,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		194769F721564D6200CF9F1F /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
+		194769F721564D6200CF9F1F /* Build configuration list for PBXNativeTarget "KiribanTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				194769F821564D6200CF9F1F /* Debug */,
