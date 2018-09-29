@@ -9,9 +9,39 @@ Kiriban
 
 Swift extension of kiriban for ios app.
 
-## Authors
+## Installation
 
-- [isaoeka](https://twitter.com/isaoeka)
+### CocoaPods
+
+Kiriban is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "Kiriban-Swift"
+```
+
+### Carthage
+
+```
+github "isaoeka/Kiriban-Swift"
+```
+
+## Usage
+
+### Extension for `Int`
+
+```Swift
+/// 10, 200, 3000, ...etc
+var isKiriban: Bool { get }
+/// 11, 222, 3333, ...etc
+var isZoroban: Bool { get }
+/// 123, 1234, 12345, ...etc
+var isRenban: Bool { get }
+```
+
+## Author
+
+- [Isao Kono](https://twitter.com/isaoeka)
 
 ## License
 
