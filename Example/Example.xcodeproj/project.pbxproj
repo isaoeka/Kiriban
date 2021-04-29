@@ -10,8 +10,7 @@
 		194769EA21564D6200CF9F1F /* Kiriban.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194769E021564D6200CF9F1F /* Kiriban.framework */; };
 		194769EF21564D6200CF9F1F /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194769EE21564D6200CF9F1F /* ExampleTests.swift */; };
 		194769F121564D6200CF9F1F /* Kiriban.h in Headers */ = {isa = PBXBuildFile; fileRef = 194769E321564D6200CF9F1F /* Kiriban.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		194769FC21564F5B00CF9F1F /* Kiriban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194769FB21564F5B00CF9F1F /* Kiriban.swift */; };
-		194769FE21567D7500CF9F1F /* Kiriban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194769FB21564F5B00CF9F1F /* Kiriban.swift */; };
+		19F051AB263AF3AA00D201B0 /* Kiriban.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F051AA263AF3AA00D201B0 /* Kiriban.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +30,7 @@
 		194769E921564D6200CF9F1F /* KiribanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiribanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		194769EE21564D6200CF9F1F /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		194769F021564D6200CF9F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		194769FB21564F5B00CF9F1F /* Kiriban.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Kiriban.swift; path = ../../../Kiriban/Kiriban.swift; sourceTree = "<group>"; };
+		19F051AA263AF3AA00D201B0 /* Kiriban.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kiriban.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +75,7 @@
 			children = (
 				194769E321564D6200CF9F1F /* Kiriban.h */,
 				194769E421564D6200CF9F1F /* Info.plist */,
-				194769FA21564EB600CF9F1F /* Kiriban */,
+				19F051A9263AF3AA00D201B0 /* Kiriban */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -90,12 +89,13 @@
 			path = ExampleTests;
 			sourceTree = "<group>";
 		};
-		194769FA21564EB600CF9F1F /* Kiriban */ = {
+		19F051A9263AF3AA00D201B0 /* Kiriban */ = {
 			isa = PBXGroup;
 			children = (
-				194769FB21564F5B00CF9F1F /* Kiriban.swift */,
+				19F051AA263AF3AA00D201B0 /* Kiriban.swift */,
 			);
-			path = Kiriban;
+			name = Kiriban;
+			path = ../../Kiriban;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				194769FC21564F5B00CF9F1F /* Kiriban.swift in Sources */,
+				19F051AB263AF3AA00D201B0 /* Kiriban.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				194769FE21567D7500CF9F1F /* Kiriban.swift in Sources */,
 				194769EF21564D6200CF9F1F /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -341,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
